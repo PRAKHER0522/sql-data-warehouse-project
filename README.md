@@ -18,3 +18,6 @@ Welcome to the Data Warehouse and Analytics Project repository
 3. **Integration** : Combined both sources into single.
 4. **Scope** :  Focus on the latest dataset only.
 5. **Documentation** : Provide clear documentation of the data model to support both business stakeholders and analytics teams 
+
+
+----------------------------------------------------------------------------------------------------------------------------------
