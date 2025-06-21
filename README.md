@@ -21,3 +21,11 @@ Welcome to the Data Warehouse and Analytics Project repository
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
+
+#### Data Architecture (Draw.io)
+
+![img.png](img.png)
+
+Url : https://app.diagrams.net/?src=about#HPRAKHER0522%2FSQL_DATABASE%2Fmain%2FDatawarehouse_Architecture.png#%7B%22pageId%22%3A%22nOGBFYduK7nkKwmtMRqq%22%7D
+
+-------------------------------------------------------------------------------------------------------------------------
