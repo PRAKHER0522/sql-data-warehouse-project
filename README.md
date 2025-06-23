@@ -35,3 +35,45 @@ Url : https://app.diagrams.net/?src=about#HPRAKHER0522%2FSQL_DATABASE%2Fmain%2FD
 ##### Project management using notion 
 
 Url : https://secret-light-d79.notion.site/Data-Warehouse-Project-21951ca3163280209c1df28ba920f37e?pvs=143
+
+##### Define naming convention 
+
+*** General Principles ***
+
+Naming case: [camelCase,SCREAMING_SNAKE_CASE,kebab-case,snake_case]  - use snake_case
+
+*** Table naming conventions***
+
+
+<!-- Bronze layer  -->
+* <sourcesystem>_<entity>
+  * [sourcesystem] : Name of sourcesystem(crm,erp)
+  * [entity]:Exact table name from source system.
+  * [Example] : crm_customer_info : customer information from crm system
+<!-- Bronze layer  -->
+
+<!-- Silver layer  -->
+* <sourcesystem>_<entity>
+  * [sourcesystem] : Name of sourcesystem(crm,erp)
+  * [entity]:Exact table name from source system.
+  * [Example] : crm_customer_info : customer information from crm system
+<!-- Silver layer  -->
+
+<!-- Gold layer  --> All name use meaningful,businsess aligned names ,starting with category
+* <category>_<entity>
+  * [category] : Desc role of the table such as dim ,fact
+  * [entity]:descriptiv anem of table ,aligned with business domain(customers,product,sales)
+  * [Example] : dim_customers,fact_sales
+
+| Pattern | Meaning           | Examples                 |
+|---------|-------------------|--------------------------|
+| dim_    | dimension table   | dim_customer,dim_product |
+| fact_   | fact table        | fact_tables              |
+| agg_    | aggregation table | agg_customers            |
+
+<!-- Gold layer  -->
+
+**** Column name convention***
+
+Example :  Key column : customer_key
+
