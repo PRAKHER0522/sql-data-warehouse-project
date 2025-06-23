@@ -45,24 +45,22 @@ Naming case: [camelCase,SCREAMING_SNAKE_CASE,kebab-case,snake_case]  - use snake
 *** Table naming conventions***
 
 
-<!-- Bronze layer  -->
-* <sourcesystem>_<entity>
+<!-- Bronze layer  --> [<sourcesystem>_<entity>]
   * [sourcesystem] : Name of sourcesystem(crm,erp)
   * [entity]:Exact table name from source system.
   * [Example] : crm_customer_info : customer information from crm system
 <!-- Bronze layer  -->
 
-<!-- Silver layer  -->
-* <sourcesystem>_<entity>
+<!-- Silver layer  --> [<sourcesystem>_<entity>]
   * [sourcesystem] : Name of sourcesystem(crm,erp)
   * [entity]:Exact table name from source system.
   * [Example] : crm_customer_info : customer information from crm system
 <!-- Silver layer  -->
 
 <!-- Gold layer  --> All name use meaningful,businsess aligned names ,starting with category
-* <category>_<entity>
+* [<category>_<entity>]
   * [category] : Desc role of the table such as dim ,fact
-  * [entity]:descriptiv anem of table ,aligned with business domain(customers,product,sales)
+  * [entity]:descriptive name of table ,aligned with business domain(customers,product,sales)
   * [Example] : dim_customers,fact_sales
 
 | Pattern | Meaning           | Examples                 |
