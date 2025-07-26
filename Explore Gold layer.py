@@ -29,7 +29,7 @@
 # MAGIC %sql
 # MAGIC
 # MAGIC
-# MAGIC CREATE VIEW gold.dim_customers AS
+# MAGIC CREATE or replace VIEW gold.dim_customers AS
 # MAGIC SELECT
 # MAGIC     ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key, -- Surrogate key
 # MAGIC     ci.cst_id                          AS customer_id,
@@ -61,7 +61,7 @@
 
 # MAGIC %sql
 # MAGIC
-# MAGIC CREATE VIEW gold.dim_products AS
+# MAGIC CREATe or replace VIEW gold.dim_products AS
 # MAGIC SELECT
 # MAGIC     ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key, -- Surrogate key
 # MAGIC     pn.prd_id       AS product_id,
@@ -81,15 +81,16 @@
 
 # COMMAND ----------
 
--- =============================================================================
--- Create Fact Table: gold.fact_sales
--- =============================================================================
+# MAGIC %md
+# MAGIC -- =============================================================================
+# MAGIC -- Create Fact Table: gold.fact_sales
+# MAGIC -- =============================================================================
 
 # COMMAND ----------
 
 # MAGIC %sql
 # MAGIC
-# MAGIC CREATE VIEW gold.fact_sales AS
+# MAGIC CREATE or replace VIEW gold.fact_sales AS
 # MAGIC SELECT
 # MAGIC     sd.sls_ord_num  AS order_number,
 # MAGIC     pr.product_key  AS product_key,
